@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Greety</string>
+    <string name="action_settings">Settings</string>
+    <string name="todo">todo</string>
+    <string name="ok">ok</string>
+    <string name="spring_holidays_backgrounds">Spring Holidays Backgrounds</string>
+    <string name="winter_holidays_backgrounds">Winter Holidays Backgrounds</string>
+    <string name="summer_holidays_backgrounds">Summer Holidays Backgrounds</string>
+    <string name="autumn_holidays_backgrounds">Autumn Holidays Backgrounds</string>
+    <string name="other_backgrounds">Other backgrounds</string>
+    <string name="choose_holiday">Choose Holiday</string>
+    <string name="choose_background">Choose Background</string>
+    <string name="appbar_scrolling_view_behavior" />
+    <string name="todo3">TODO</string>
+    <string name="todo2">TODO</string>
+</resources>
