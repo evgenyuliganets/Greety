@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".SpringBackgrounds">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/choose_background"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#205302"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:background="@drawable/spring1s"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:background="@drawable/spring2s"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/imageButton14"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:background="@drawable/spring3s"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:background="@drawable/spring4s"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:background="@drawable/spring5s"
+            android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+
+</ScrollView>
