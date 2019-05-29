@@ -2,22 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.greety">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <application
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-        android:largeHeap="true"
+    <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".ResultFromEditor"></activity>
+        <activity android:name=".SpringBackgrounds" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/api_key"/>
+            android:value="@string/api_key" />
+
         <activity android:name=".WinterBackgrounds" />
         <activity android:name=".NewGreeting" />
         <activity
@@ -31,55 +38,30 @@
             </intent-filter>
         </activity>
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar" />
-
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar" />
-
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar"
-
             android:windowSoftInputMode="adjustPan" />
-
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar" />
-
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar" />
-
         <activity
-
             android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorAppsActivity"
-
             android:screenOrientation="portrait"
-
             android:theme="@android:style/Theme.Holo.NoActionBar" />
-
     </application>
 
 </manifest>

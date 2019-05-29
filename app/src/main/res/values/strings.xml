@@ -13,4 +13,6 @@
     <string name="appbar_scrolling_view_behavior" />
     <string name="todo3">TODO</string>
     <string name="todo2">TODO</string>
+    <string name="photo_succesfully_saved">Photo Succesfully Saved</string>
+    <string name="you_can_also_share_it">You Can Also Share It</string>
 </resources>

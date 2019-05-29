@@ -28,15 +28,15 @@
             android:layout_width="match_parent"
             android:layout_height="125dp"
             android:foreground="?android:attr/selectableItemBackground">
-            
+
             <ImageButton
-                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:background="@drawable/bg"
                 android:contentDescription="@string/todo"
-                android:gravity="center" tools:targetApi="m"/>
+                android:gravity="center"
+                tools:targetApi="m" />
             
             <TextView
                 android:id="@+id/textView2"
@@ -63,8 +63,7 @@
                 android:layout_height="125dp"
                 android:background="@drawable/mrch1"
                 android:contentDescription="@string/todo"
-                android:text="@string/ok"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                android:text="@string/ok" />
 
             <TextView
                 android:id="@+id/textView"
@@ -91,7 +90,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:background="@drawable/summer1"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -118,8 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:background="@drawable/autumn1"
-                android:contentDescription="@string/todo"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -146,8 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:background="@drawable/other1"
-                android:contentDescription="@string/todo"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/textView6"

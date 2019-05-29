@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".WinterBackgrounds"
-        >
+        tools:context=".WinterBackgrounds">
 
         <TextView
             android:id="@+id/textView7"
@@ -57,12 +56,6 @@
             android:layout_width="match_parent"
             android:layout_height="221dp"
             android:background="@drawable/winter5"
-            android:contentDescription="@string/todo" />
-
-        <ImageButton
-            android:id="@+id/imageButton11"
-            android:layout_width="match_parent"
-            android:layout_height="267dp"
             android:contentDescription="@string/todo" />
 
     </LinearLayout>

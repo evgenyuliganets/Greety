@@ -28,37 +28,38 @@
             android:id="@+id/imageButton12"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:contentDescription="@string/todo"
-            tools:srcCompat="@drawable/spring1s" />
+            android:background="@drawable/spring1s"
+            android:contentDescription="@string/todo" />
 
         <ImageButton
             android:id="@+id/imageButton13"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:contentDescription="@string/todo"
-            tools:srcCompat="@drawable/spring2s" />
+            android:background="@drawable/spring2s"
+            android:contentDescription="@string/todo" />
 
         <ImageButton
             android:id="@+id/imageButton14"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:contentDescription="@string/todo"
-            tools:srcCompat="@drawable/spring3s" />
+            android:background="@drawable/spring3s"
+            android:contentDescription="@string/todo" />
 
         <ImageButton
             android:id="@+id/imageButton15"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:contentDescription="@string/todo"
-            tools:srcCompat="@drawable/spring4s" />
+            android:background="@drawable/spring4s"
+            android:contentDescription="@string/todo" />
 
         <ImageButton
             android:id="@+id/imageButton16"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:contentDescription="@string/todo"
-            tools:srcCompat="@drawable/spring5s" />
+            android:background="@drawable/spring5s"
+            android:contentDescription="@string/todo" />
 
     </LinearLayout>
+
 
 </ScrollView>

@@ -33,6 +33,7 @@ public class NewGreeting extends AppCompatActivity {
         });
         imageButton2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                startActivity(new Intent(NewGreeting.this, SpringBackgrounds.class));
             }
 
         });

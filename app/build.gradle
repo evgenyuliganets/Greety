@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
 
-
 android {
     compileSdkVersion 28
 
@@ -31,8 +30,7 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation(name:'ds-photo-editor-sdk-v8', ext:'aar')
-
+    implementation(name: 'ds-photo-editor-sdk-v8', ext: 'aar')
 
 
     // SDK related dependencies
@@ -51,8 +49,7 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation(name:'ds-photo-editor-sdk-v8', ext:'aar')
-
+    implementation(name: 'ds-photo-editor-sdk-v8', ext: 'aar')
 
 
     // SDK related dependencies

@@ -36,4 +36,11 @@
         app:maxImageSize="40dp"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="372dp"
+        android:contentDescription="@string/todo"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
+
 </android.support.design.widget.CoordinatorLayout>
