@@ -89,7 +89,7 @@
                 android:id="@+id/imageButton7"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:background="@drawable/summer1"
+                android:background="@drawable/summer0"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -115,7 +115,7 @@
                 android:id="@+id/imageButton8"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:background="@drawable/autumn1"
+                android:background="@drawable/autumn0"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -142,7 +142,7 @@
                 android:id="@+id/imageButton9"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:background="@drawable/other1"
+                android:background="@drawable/other0"
                 android:contentDescription="@string/todo" />
 
             <TextView

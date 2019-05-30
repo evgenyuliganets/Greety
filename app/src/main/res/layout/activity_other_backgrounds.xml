@@ -24,38 +24,38 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton12"
+            android:id="@+id/imageButton27"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/spring1s"
+            android:background="@drawable/other1"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/imageButton28"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/spring2s"
+            android:background="@drawable/other2"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:id="@+id/imageButton14"
+            android:id="@+id/imageButton29"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/spring3s"
+            android:background="@drawable/other3"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:id="@+id/imageButton15"
+            android:id="@+id/imageButton30"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/spring4s"
+            android:background="@drawable/other4"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:id="@+id/imageButton16"
+            android:id="@+id/imageButton31"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/spring5s"
+            android:background="@drawable/other5"
             android:contentDescription="@string/todo" />
 
     </LinearLayout>
