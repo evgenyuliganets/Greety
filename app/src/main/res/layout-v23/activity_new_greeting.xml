@@ -30,6 +30,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
@@ -58,6 +59,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
@@ -86,6 +88,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton7"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
@@ -112,6 +115,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton8"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
@@ -139,6 +143,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton9"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"

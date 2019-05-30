@@ -15,4 +15,7 @@
     <string name="todo2">TODO</string>
     <string name="photo_succesfully_saved">Photo Succesfully Saved</string>
     <string name="you_can_also_share_it">You Can Also Share It</string>
+    <string name="latest_edited_photo">Latest Edited Photo</string>
+    <string name="use_button_below_to_make_new_greety">Use Button Below To Make New Greety</string>
+    <string name="last_edited_greety">Last Edited Greety</string>
 </resources>

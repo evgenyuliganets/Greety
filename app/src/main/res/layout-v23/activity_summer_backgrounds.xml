@@ -24,38 +24,43 @@
             android:textStyle="bold" />
 
         <ImageButton
+            android:layout_marginTop="5dp"
             android:id="@+id/imageButton17"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/summer1"
+            android:background="@drawable/summer1s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
+            android:layout_marginTop="5dp"
             android:id="@+id/imageButton18"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/summer2"
+            android:background="@drawable/summer2s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
+            android:layout_marginTop="5dp"
             android:id="@+id/imageButton19"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/summer3"
+            android:background="@drawable/summer3s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
+            android:layout_marginTop="5dp"
             android:id="@+id/imageButton20"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/summer4"
+            android:background="@drawable/summer4s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
+            android:layout_marginTop="5dp"
             android:id="@+id/imageButton21"
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/summer5"
+            android:background="@drawable/summer5s"
             android:contentDescription="@string/todo" />
 
     </LinearLayout>

@@ -37,6 +37,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -48,17 +49,33 @@ public class WinterBackgrounds extends AppCompatActivity {
     ImageButton imageButton3;
     ImageButton imageButton4;
     ImageButton imageButton10;
+    String ImagePath;
     public static final String OUTPUT_PHOTO_DIRECTORY = "ds_photo_editor_sample";
-
+    private void writeToFile(String data,Context context) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("path.txt", Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+        }
+    }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         final Intent result = new Intent(this, ResultFromEditor.class);
+        final Intent result1 = new Intent(this, MainActivity.class);
         if (resultCode==RESULT_OK){
 
             if (requestCode == 200) {
                 Uri outputUri = data.getData();
+                assert outputUri != null;
                 result.putExtra("imagePath", outputUri.toString());
+                ImagePath=outputUri.toString();
+                writeToFile(ImagePath, this);
+                result1.putExtra("imagePath",outputUri.toString());
+                startActivity(result1);
                 startActivity(result);
             }
 
