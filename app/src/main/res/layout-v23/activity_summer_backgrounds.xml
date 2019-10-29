@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#75FDD37A">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,42 +25,42 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:layout_marginTop="5dp"
             android:id="@+id/imageButton17"
             android:layout_width="match_parent"
             android:layout_height="204dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/summer1s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:layout_marginTop="5dp"
             android:id="@+id/imageButton18"
             android:layout_width="match_parent"
             android:layout_height="204dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/summer2s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:layout_marginTop="5dp"
             android:id="@+id/imageButton19"
             android:layout_width="match_parent"
             android:layout_height="204dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/summer3s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:layout_marginTop="5dp"
             android:id="@+id/imageButton20"
             android:layout_width="match_parent"
             android:layout_height="204dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/summer4s"
             android:contentDescription="@string/todo" />
 
         <ImageButton
-            android:layout_marginTop="5dp"
             android:id="@+id/imageButton21"
             android:layout_width="match_parent"
             android:layout_height="204dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/summer5s"
             android:contentDescription="@string/todo" />
 

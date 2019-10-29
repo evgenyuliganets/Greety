@@ -1,10 +1,11 @@
 package com.example.greety;
 
-
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,7 @@ public class ResultFromEditor extends AppCompatActivity {
             return true;
         } catch (PackageManager.NameNotFoundException e) {
             //Error
+            Toast.makeText(mContext, "Instagram have not been installed.", Toast.LENGTH_SHORT).show();
         }
 
         return false;
@@ -34,6 +36,7 @@ public class ResultFromEditor extends AppCompatActivity {
     private void shareInstagram(Uri uri) {
         Intent intent = getPackageManager().getLaunchIntentForPackage("com.instagram.android");
         if (intent != null) {
+            intent.setComponent(new ComponentName("com.instagram.android", "com.instagram.android.activity.UrlHandlerActivity"));
             Intent mIntentShare = new Intent(Intent.ACTION_SEND);
             String mStrExtension = android.webkit.MimeTypeMap.getFileExtensionFromUrl(uri.toString());
             String mStrMimeType = android.webkit.MimeTypeMap.getSingleton().getMimeTypeFromExtension(mStrExtension);
@@ -47,7 +50,8 @@ public class ResultFromEditor extends AppCompatActivity {
 
             mIntentShare.setPackage("com.instagram.android");
             startActivity(mIntentShare);
-        } else {
+        }
+        else  {
 
             Toast.makeText(mContext, "Instagram have not been installed.", Toast.LENGTH_SHORT).show();
         }
@@ -57,7 +61,8 @@ public class ResultFromEditor extends AppCompatActivity {
         setContentView(R.layout.activity_result_from_editor);
         imageView=findViewById(R.id.imageView);
         imageButton=findViewById(R.id.imageButton11);
-
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
         Intent intent = getIntent();
         final String image_path= intent.getStringExtra("imagePath");
         final Uri fileUri = Uri.parse(image_path);
@@ -68,7 +73,6 @@ public class ResultFromEditor extends AppCompatActivity {
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (checkAppInstall(image_path))
               shareInstagram(fileUri);
         }
 

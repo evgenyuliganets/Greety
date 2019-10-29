@@ -2,6 +2,7 @@ package com.example.greety;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,12 +16,8 @@ import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-public class OtherBackgrounds extends AppCompatActivity {
-    ImageButton imageButton12;
-    ImageButton imageButton13;
-    ImageButton imageButton14;
-    ImageButton imageButton15;
-    ImageButton imageButton16;
+public class PicFromGallery extends AppCompatActivity {
+    ImageButton imageButton32;
     String ImagePath;
 
     public static final String OUTPUT_PHOTO_DIRECTORY = "Greetys";
@@ -55,61 +52,23 @@ public class OtherBackgrounds extends AppCompatActivity {
 
         }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_backgrounds);
-        imageButton12 = findViewById(R.id.imageButton27);
-        imageButton13 = findViewById(R.id.imageButton28);
-        imageButton14 = findViewById(R.id.imageButton29);
-        imageButton15 = findViewById(R.id.imageButton30);
-        imageButton16 = findViewById(R.id.imageButton31);
-
+        setContentView(R.layout.activity_pic_from_gallery);
+        imageButton32 = findViewById(R.id.imageButton32);
         final Intent dsPhotoEditorIntent = new Intent(this, DsPhotoEditorActivity.class);
         String string = getString (R.string.api_key);
         dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, OUTPUT_PHOTO_DIRECTORY);
         dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_API_KEY,string);
-        imageButton12.setOnClickListener(new View.OnClickListener() {
+        Intent intent = getIntent();
+
+        final Uri uri = intent.getParcelableExtra("imagePath");
+        imageButton32.setImageURI(uri);
+        imageButton32.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
 
-                Uri uri = Uri.parse("android.resource://com.example.greety/drawable/other1");
-                dsPhotoEditorIntent.setData(uri);
-                startActivityForResult(dsPhotoEditorIntent, 200);
-
-            }
-        });
-        imageButton13.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Uri uri = Uri.parse("android.resource://com.example.greety/drawable/other2");
-                dsPhotoEditorIntent.setData(uri);
-                startActivityForResult(dsPhotoEditorIntent, 200);
-
-            }
-        });
-        imageButton14.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Uri uri = Uri.parse("android.resource://com.example.greety/drawable/other3");
-                dsPhotoEditorIntent.setData(uri);
-                startActivityForResult(dsPhotoEditorIntent, 200);
-
-            }
-        });
-        imageButton15.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Uri uri = Uri.parse("android.resource://com.example.greety/drawable/other4");
-                dsPhotoEditorIntent.setData(uri);
-                startActivityForResult(dsPhotoEditorIntent, 200);
-
-            }
-        });
-        imageButton16.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Uri uri = Uri.parse("android.resource://com.example.greety/drawable/other5");
                 dsPhotoEditorIntent.setData(uri);
                 startActivityForResult(dsPhotoEditorIntent, 200);
 

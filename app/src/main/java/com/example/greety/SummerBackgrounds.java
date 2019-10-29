@@ -23,7 +23,7 @@ public class SummerBackgrounds extends AppCompatActivity {
     ImageButton imageButton16;
     String ImagePath;
 
-    public static final String OUTPUT_PHOTO_DIRECTORY = "ds_photo_editor_sample";
+    public static final String OUTPUT_PHOTO_DIRECTORY = "Greetys";
 
     private void writeToFile(String data, Context context) {
         try {

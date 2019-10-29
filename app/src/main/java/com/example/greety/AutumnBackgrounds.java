@@ -1,5 +1,4 @@
 package com.example.greety;
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -8,10 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-
 import com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity;
 import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants;
-
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
@@ -23,7 +20,7 @@ public class AutumnBackgrounds extends AppCompatActivity {
     ImageButton imageButton16;
     String ImagePath;
 
-    public static final String OUTPUT_PHOTO_DIRECTORY = "ds_photo_editor_sample";
+    public static final String OUTPUT_PHOTO_DIRECTORY = "Greetys";
 
     private void writeToFile(String data, Context context) {
         try {

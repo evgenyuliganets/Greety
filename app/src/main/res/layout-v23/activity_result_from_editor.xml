@@ -3,47 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".ResultFromEditor"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:background="#75FDD37A">
 
-    <TextView
-        android:id="@+id/textView9"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="71dp"
-        android:gravity="center"
-        android:includeFontPadding="false"
-        android:text="@string/photo_succesfully_saved"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#205302"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ResultFromEditor">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="209dp"
-        android:contentDescription="@string/todo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-8dp" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/photo_succesfully_saved"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#205302"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:gravity="center"
-        android:text="@string/you_can_also_share_it" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:contentDescription="@string/todo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-8dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:background="@drawable/inst"
-        android:contentDescription="@string/todo" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:text="@string/you_can_also_share_it" />
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/inst"
+            android:contentDescription="@string/todo" />
+
+    </LinearLayout>
 </ScrollView>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="wrap_content"
+    android:background="#75FDD37A">
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -30,15 +31,15 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
-                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/bg"
                 android:contentDescription="@string/todo"
                 android:gravity="center"
                 tools:targetApi="m" />
-            
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
@@ -59,10 +60,10 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
-                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/mrch1"
                 android:contentDescription="@string/todo"
                 android:text="@string/ok" />
@@ -88,10 +89,10 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
-                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton7"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/summer0"
                 android:contentDescription="@string/todo" />
 
@@ -115,10 +116,10 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
-                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton8"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/autumn0"
                 android:contentDescription="@string/todo" />
 
@@ -143,10 +144,10 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageButton
-                android:layout_marginTop="5dp"
                 android:id="@+id/imageButton9"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/other0"
                 android:contentDescription="@string/todo" />
 

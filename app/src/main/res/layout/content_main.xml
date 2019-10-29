@@ -2,14 +2,16 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingTop="50dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#75FDD37A"
+    android:paddingTop="50dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/textView9"
@@ -36,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="41dp"
             android:gravity="center"
-            android:text="@string/use_button_below_to_make_new_greety" />
+            android:text="@string/use_buttons_below_to_make_new_greety" />
 
     </LinearLayout>
 </ScrollView>
